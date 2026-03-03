@@ -1,0 +1,18 @@
+{
+  "name": "Drum Academy",
+  "short_name": "Drum Academy",
+  "description": "Interactive drum practice with lessons, metronome, and MIDI support.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "icons": [
+    {
+      "src": "app-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
