@@ -119,6 +119,49 @@
         return { id, title, bpm, subdiv: patternLen, bars: 1, steps, sticking: stick, hint, tips, focus:["Hands","Consistency","Rebound"] };
       };
 
+      const RUDIMENT_40 = [
+        { title:"Single Stroke Roll", bpm:90, patternLen:16, sticking:"RLRLRLRLRLRLRLRL", hint:"Alternate evenly and stay relaxed." },
+        { title:"Single Stroke Four", bpm:92, patternLen:16, sticking:"RLRLRLRLRLRLRLRL", hint:"Group in fours without rushing transitions." },
+        { title:"Single Stroke Seven", bpm:84, patternLen:14, sticking:"RLRLRLRLRLRLRL", hint:"Keep all seven notes even per group." },
+        { title:"Multiple Bounce Roll", bpm:72, patternLen:16, sticking:"RRLLRRLLRRLLRRLL", hint:"Let rebound do most of the work." },
+        { title:"Triple Stroke Roll", bpm:78, patternLen:18, sticking:"RRRLLLRRRLLLRRRLLL", hint:"Three strokes per hand with matched volume." },
+        { title:"Double Stroke Open Roll", bpm:86, patternLen:16, sticking:"RRLLRRLLRRLLRRLL", hint:"Open and controlled; clean second notes." },
+        { title:"Five Stroke Roll", bpm:82, patternLen:10, sticking:"RRLLRLLRRL", hint:"Play strict 5-note groupings." },
+        { title:"Six Stroke Roll", bpm:88, patternLen:12, sticking:"RLLRRLRLLRRL", hint:"Think in 6-note phrases and stay smooth." },
+        { title:"Seven Stroke Roll", bpm:80, patternLen:14, sticking:"RRLLRRLRLLRRLL", hint:"Keep the roll centered and even." },
+        { title:"Nine Stroke Roll", bpm:76, patternLen:18, sticking:"RRLLRRLLRLLRRLLRRL", hint:"Long roll groups must stay consistent." },
+        { title:"Ten Stroke Roll", bpm:78, patternLen:20, sticking:"RRLLRRLLRLRRLLRRLLRL", hint:"Maintain spacing across all 10 strokes." },
+        { title:"Eleven Stroke Roll", bpm:74, patternLen:22, sticking:"RRLLRRLLRRLRRLLRRLLRRL", hint:"Control the length of each roll phrase." },
+        { title:"Thirteen Stroke Roll", bpm:72, patternLen:26, sticking:"RRLLRRLLRRLLRLRRLLRRLLRRLLRL", hint:"Stay patient and keep dynamic control." },
+        { title:"Fifteen Stroke Roll", bpm:70, patternLen:30, sticking:"RRLLRRLLRRLLRRLRRLLRRLLRRLLRRLR", hint:"Use rebound and avoid tension." },
+        { title:"Seventeen Stroke Roll", bpm:68, patternLen:34, sticking:"RRLLRRLLRRLLRRLLRLRRLLRRLLRRLLRRLLRLR", hint:"Long roll phrasing, no rushing at the end." },
+        { title:"Single Paradiddle", bpm:92, patternLen:16, sticking:"RLRRLRLLRLRRLRLL", hint:"Keep accents controlled and diddles smooth." },
+        { title:"Double Paradiddle", bpm:86, patternLen:12, sticking:"RLRLRRLRLRLL", hint:"Six-note cycle with consistent hand flow." },
+        { title:"Triple Paradiddle", bpm:82, patternLen:16, sticking:"RLRLRLRRLRLRLRLL", hint:"Longer paradiddle cycle, same touch." },
+        { title:"Paradiddle-Diddle", bpm:88, patternLen:12, sticking:"RLRRLLRLRRLL", hint:"Two diddles should connect cleanly." },
+        { title:"Flam", bpm:78, patternLen:16, sticking:"RLRLRLRLRLRLRLRL", hint:"Keep grace notes low and primary notes clear." },
+        { title:"Flam Accent", bpm:82, patternLen:12, sticking:"RLRRLRLLRLRR", hint:"Accent placement should be deliberate." },
+        { title:"Flam Tap", bpm:80, patternLen:12, sticking:"RLRRLRRLRRLR", hint:"Flam then tap with matched spacing." },
+        { title:"Flamacue", bpm:78, patternLen:14, sticking:"RLRLRRLLRLRRLL", hint:"Keep the flam texture consistent." },
+        { title:"Flam Paradiddle", bpm:84, patternLen:16, sticking:"RLRRLRLLRLRRLRLL", hint:"Paradiddle flow with clean flams." },
+        { title:"Single Flammed Mill", bpm:80, patternLen:16, sticking:"RLRLRRLLRLRLRRLL", hint:"Stay relaxed through the inverted feel." },
+        { title:"Pataflafla", bpm:76, patternLen:12, sticking:"RLRLRLRLRLRL", hint:"Keep each flam compact and controlled." },
+        { title:"Swiss Army Triplet", bpm:86, patternLen:12, sticking:"RLRRLLRLRRLL", hint:"Drive triplet flow evenly." },
+        { title:"Inverted Flam Tap", bpm:78, patternLen:12, sticking:"RRLRLLRLRRLL", hint:"Watch sticking accuracy on inversions." },
+        { title:"Flam Drag", bpm:74, patternLen:12, sticking:"RLRRLLRLRRLL", hint:"Grace notes must stay light and tight." },
+        { title:"Drag", bpm:82, patternLen:16, sticking:"RRLRLLRLRRLRLLRL", hint:"Double grace note cleanly before the primary stroke." },
+        { title:"Single Drag Tap", bpm:84, patternLen:16, sticking:"RRLRRLLRRLRRLLR", hint:"Keep taps even after each drag." },
+        { title:"Double Drag Tap", bpm:80, patternLen:16, sticking:"RRLLRRLRRLLRRLR", hint:"Two drags before the tap; no flams." },
+        { title:"Lesson 25", bpm:86, patternLen:12, sticking:"RRLRLLRRLRLL", hint:"Classic drag rudiment; stay relaxed." },
+        { title:"Single Dragadiddle", bpm:82, patternLen:16, sticking:"RRLRRLRLLRRLRRLL", hint:"Drag into paradiddle motion smoothly." },
+        { title:"Drag Paradiddle No. 1", bpm:80, patternLen:16, sticking:"RRLRLRRLLRRLRLRL", hint:"Control the drag into each sticking turn." },
+        { title:"Drag Paradiddle No. 2", bpm:78, patternLen:16, sticking:"RRLRLLRLRRLRLLRL", hint:"Keep left/right balance consistent." },
+        { title:"Single Ratamacue", bpm:84, patternLen:12, sticking:"RRLRLRRLLRRL", hint:"Drag lead into clear accented notes." },
+        { title:"Double Ratamacue", bpm:80, patternLen:14, sticking:"RRLLRLRRLLRLRR", hint:"Two drag textures, one steady pulse." },
+        { title:"Triple Ratamacue", bpm:76, patternLen:16, sticking:"RRRLLRLRRLLRLRRL", hint:"Stay even through extended ratamacue phrasing." },
+        { title:"Double Stroke Roll (Closed)", bpm:88, patternLen:16, sticking:"RRLLRRLLRRLLRRLL", hint:"Close the doubles with equal bounce." },
+      ];
+
       /***********************
        * “More real” lessons (multi-limb + counts)
        ***********************/
@@ -322,35 +365,15 @@
           }),
         ],
 
-        Rudiments: [
-          makeRudimentLesson({
-            id:"rud-01",
-            title:"Rudiment 1 — Single Strokes (16)",
-            bpm: 90,
-            patternLen: 16,
-            sticking:"RLRLRLRLRLRLRLRL",
-            hint:"Even strokes. Same height. Same sound.",
-            tips:["Start slow. Perfect motion first.", "Raise tempo only if clean."]
-          }),
-          makeRudimentLesson({
-            id:"rud-02",
-            title:"Rudiment 2 — Double Strokes (16)",
-            bpm: 86,
-            patternLen: 16,
-            sticking:"RRLLRRLLRRLLRRLL",
-            hint:"Let rebound do work. Don’t force the 2nd hit.",
-            tips:["Keep wrists relaxed.", "Match volume on both hits."]
-          }),
-          makeRudimentLesson({
-            id:"rud-03",
-            title:"Rudiment 3 — Paradiddle (16)",
-            bpm: 92,
-            patternLen: 16,
-            sticking:"RLRRLRLLRLRRLRLL",
-            hint:"Make the diddles smooth, not loud.",
-            tips:["Accent the first note of each group if you want a challenge."]
-          }),
-        ],
+        Rudiments: RUDIMENT_40.map((rud, i) => makeRudimentLesson({
+          id: `rud-${String(i + 1).padStart(2, "0")}`,
+          title: `Rudiment ${i + 1} — ${rud.title} (${rud.patternLen})`,
+          bpm: rud.bpm,
+          patternLen: rud.patternLen,
+          sticking: rud.sticking,
+          hint: rud.hint,
+          tips: ["Start slow and prioritize clean sticking.", "Increase tempo only when timing stays consistent."]
+        })),
       };
 
       /***********************
@@ -1281,7 +1304,7 @@
         const [pulse, setPulse] = useState({});
         const [sampleMap, setSampleMap] = useState({});
 
-        const [metEnabled, setMetEnabled] = useState(true);
+        const [metEnabled, setMetEnabled] = useState(false);
 
         const [vol, setVol] = useState({
           master: 0.9,
@@ -1818,7 +1841,6 @@
           if (extra?.silent) return;
 
           ensureGridStarted();
-          startMetronomeIfNeeded();
 
           setPulse((prev) => ({ ...prev, [pieceId]: { vel: v01, t: performance.now() } }));
 
@@ -1928,8 +1950,8 @@
 
         return (
           <div className="min-h-screen">
-            <header className="sticky top-0 z-10 border-b border-white/10 bg-slate-950/70 backdrop-blur">
-              <div className="mx-auto max-w-6xl px-3 sm:px-4 py-3 flex items-center justify-between gap-3">
+            <header className="sticky top-0 z-10 border-b border-white/10 bg-slate-950/70 backdrop-blur overflow-x-auto scrollbar-thin">
+              <div className="mx-auto max-w-6xl min-w-[980px] sm:min-w-0 px-3 sm:px-4 py-3 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-2xl bg-white/5 border border-white/10 grid place-items-center shadow-[0_18px_60px_rgba(0,0,0,.5)]">
                     🥁
@@ -1942,7 +1964,7 @@
                   </div>
                 </div>
 
-                <div className="flex flex-wrap items-center justify-end gap-2">
+                <div className="flex flex-nowrap sm:flex-wrap items-center justify-end gap-2">
                   <div className="hidden sm:flex items-center gap-2 text-xs">
                     <span className={`px-2 py-1 rounded-full border ${audioReady ? "border-emerald-400/30 bg-emerald-400/10 text-emerald-200" : "border-white/10 bg-white/5 text-slate-300"}`}>
                       Audio: {audioReady ? "Ready" : "Tap once"}
